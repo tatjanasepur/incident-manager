@@ -1,62 +1,19 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f0f2f5;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1, h2 {
+.summary {
   text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-form {
+.filters {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-input, select, button {
-  padding: 10px;
-  font-size: 16px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-thead {
-  background: #007bff;
-  color: white;
-}
-
-td, th {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
-}
-
-button.done {
-  background: green;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-}
-
-button.delete {
-  background: red;
-  color: white;
-  border: none;
-  padding: 5px 10px;
+.filters input, .filters select, .filters button {
+  padding: 8px;
+  font-size: 14px;
 }
