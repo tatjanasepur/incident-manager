@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Incident Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Incident Management System</h1>
+
+    <form id="incidentForm">
+      <input type="text" id="user" placeholder="Ime korisnika" required />
+      <input type="text" id="issue" placeholder="Opis problema" required />
+      <select id="priority">
+        <option value="High">Visok</option>
+        <option value="Medium">Srednji</option>
+        <option value="Low">Nizak</option>
+      </select>
+      <button type="submit">Prijavi incident</button>
+    </form>
+
+    <h2>Incidenti</h2>
+    <table id="incidentTable">
+      <thead>
+        <tr>
+          <th>Korisnik</th>
+          <th>Opis</th>
+          <th>Prioritet</th>
+          <th>Status</th>
+          <th>Akcije</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>Statistika</h2>
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
