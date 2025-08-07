@@ -21,4 +21,4 @@ Korisnik može da prijavi problem, vidi status, filtrira, eksportuje i analizira
 - Responsive dizajn
 
 **Live demo**  
-👉 [Klikni ovde da vidiš aplikaciju](https://tvoj-username.github.io/incident-manager/)
+👉 [Klikni ovde da vidiš aplikaciju](https://tatjanasepur.github.io/incident-manager/)
