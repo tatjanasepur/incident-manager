@@ -1,7 +1,7 @@
 # 💼 Incident Manager – Web Aplikacija
 
 **Opis**  
-Frontend-only aplikacija za simulaciju sistema upravljanja incidentima u banci. Kreirano kao portfolio za firmu ASEE Solutions.  
+Frontend-only aplikacija za simulaciju sistema upravljanja incidentima u banci.   
 Korisnik može da prijavi problem, vidi status, filtrira, eksportuje i analizira podatke – sve bez backend-a.
 
 **Tehnologije**
