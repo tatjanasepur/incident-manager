@@ -10,6 +10,10 @@
   <div class="container">
     <h1>Incident Management System</h1>
 
+    <div class="summary">
+      Ukupno incidenata: <span id="totalCount">0</span>
+    </div>
+
     <form id="incidentForm">
       <input type="text" id="user" placeholder="Ime korisnika" required />
       <input type="text" id="issue" placeholder="Opis problema" required />
@@ -21,10 +25,27 @@
       <button type="submit">Prijavi incident</button>
     </form>
 
+    <div class="filters">
+      <input type="text" id="search" placeholder="Pretraga..." />
+      <select id="statusFilter">
+        <option value="All">Svi statusi</option>
+        <option value="Otvoren">Otvoreni</option>
+        <option value="Rešen">Rešeni</option>
+      </select>
+      <select id="priorityFilter">
+        <option value="All">Svi prioriteti</option>
+        <option value="High">Visok</option>
+        <option value="Medium">Srednji</option>
+        <option value="Low">Nizak</option>
+      </select>
+      <button onclick="exportCSV()">Eksport CSV</button>
+    </div>
+
     <h2>Incidenti</h2>
     <table id="incidentTable">
       <thead>
         <tr>
+          <th onclick="sortByDate()">Datum ⬍</th>
           <th>Korisnik</th>
           <th>Opis</th>
           <th>Prioritet</th>
